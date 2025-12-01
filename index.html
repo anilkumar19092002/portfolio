@@ -80,14 +80,14 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 40px;
+            gap: 30px;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 15px;
             transition: all 0.3s;
             position: relative;
         }
@@ -123,7 +123,7 @@
         }
 
         .hero-text h1 {
-            font-size: 72px;
+            font-size: 64px;
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 20px;
@@ -145,9 +145,9 @@
         }
 
         .hero-text h2 {
-            font-size: 32px;
+            font-size: 28px;
             color: #a0a0a0;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             font-weight: 400;
             animation: fadeInUp 0.8s ease 0.2s both;
         }
@@ -156,9 +156,21 @@
             font-size: 18px;
             color: #888;
             line-height: 1.8;
-            margin-bottom: 40px;
-            max-width: 600px;
+            margin-bottom: 35px;
+            max-width: 650px;
             animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+            animation: fadeInUp 0.8s ease 0.5s both;
+        }
+
+        .hero-meta span {
+            display: inline-block;
+            margin-right: 16px;
         }
 
         .cta-buttons {
@@ -168,11 +180,11 @@
         }
 
         .btn {
-            padding: 18px 40px;
+            padding: 16px 34px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 15px;
             transition: all 0.3s;
             display: inline-block;
         }
@@ -208,8 +220,8 @@
 
         .profile-wrapper {
             position: relative;
-            width: 450px;
-            height: 450px;
+            width: 420px;
+            height: 420px;
         }
 
         .profile-glow {
@@ -270,7 +282,7 @@
         }
 
         .stat-box h3 {
-            font-size: 48px;
+            font-size: 40px;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -279,7 +291,7 @@
 
         .stat-box p {
             color: #888;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         section {
@@ -288,13 +300,13 @@
 
         .section-title {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 70px;
         }
 
         .section-title h2 {
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             background: linear-gradient(135deg, #fff 0%, #667eea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -302,8 +314,10 @@
 
         .section-title p {
             color: #888;
-            font-size: 18px;
+            font-size: 17px;
         }
+
+        /* Skills */
 
         .skills-grid {
             display: grid;
@@ -313,7 +327,7 @@
 
         .skill-card {
             background: rgba(255, 255, 255, 0.03);
-            padding: 40px 30px;
+            padding: 32px 26px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s;
@@ -328,13 +342,13 @@
         }
 
         .skill-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 36px;
+            margin-bottom: 15px;
         }
 
         .skill-card h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         .skill-card p {
@@ -342,6 +356,53 @@
             font-size: 14px;
             line-height: 1.6;
         }
+
+        /* Education */
+
+        .education-grid {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            gap: 25px;
+        }
+
+        .edu-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s;
+        }
+
+        .edu-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .edu-degree {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .edu-inst {
+            color: #667eea;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .edu-meta {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .edu-extra {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Projects */
 
         .projects-grid {
             display: grid;
@@ -365,7 +426,7 @@
 
         .project-header {
             background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 40px;
+            padding: 32px;
             position: relative;
             overflow: hidden;
         }
@@ -381,19 +442,19 @@
         }
 
         .project-header h3 {
-            font-size: 28px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-bottom: 6px;
             position: relative;
         }
 
         .project-body {
-            padding: 40px;
+            padding: 30px;
         }
 
         .project-body p {
             color: #888;
             line-height: 1.8;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
             font-size: 15px;
         }
 
@@ -401,15 +462,15 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
 
         .tech-tag {
             background: rgba(102, 126, 234, 0.2);
-            color: #667eea;
-            padding: 8px 16px;
+            color: #9aa7ff;
+            padding: 7px 14px;
             border-radius: 20px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
         }
 
@@ -427,6 +488,8 @@
             gap: 12px;
         }
 
+        /* Experience */
+
         .timeline {
             max-width: 900px;
             margin: 0 auto;
@@ -435,7 +498,7 @@
         .timeline-item {
             padding-left: 60px;
             position: relative;
-            padding-bottom: 60px;
+            padding-bottom: 50px;
             border-left: 2px solid rgba(102, 126, 234, 0.3);
         }
 
@@ -457,7 +520,7 @@
 
         .timeline-content {
             background: rgba(255, 255, 255, 0.03);
-            padding: 40px;
+            padding: 30px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s;
@@ -470,20 +533,20 @@
         }
 
         .timeline-content h3 {
-            font-size: 24px;
-            margin-bottom: 8px;
+            font-size: 22px;
+            margin-bottom: 4px;
         }
 
         .timeline-content h4 {
             color: #667eea;
-            font-size: 18px;
-            margin-bottom: 8px;
+            font-size: 16px;
+            margin-bottom: 4px;
         }
 
         .timeline-date {
             color: #666;
             font-size: 14px;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
         .timeline-content ul {
@@ -493,10 +556,11 @@
 
         .timeline-content li {
             color: #888;
-            padding: 8px 0;
-            padding-left: 25px;
+            padding: 6px 0;
+            padding-left: 22px;
             position: relative;
             line-height: 1.6;
+            font-size: 14px;
         }
 
         .timeline-content li::before {
@@ -504,8 +568,10 @@
             position: absolute;
             left: 0;
             color: #667eea;
-            font-size: 18px;
+            font-size: 16px;
         }
+
+        /* Publications */
 
         .publications {
             background: rgba(255, 255, 255, 0.02);
@@ -514,11 +580,14 @@
 
         .publication-card {
             background: rgba(255, 255, 255, 0.03);
-            padding: 40px;
+            padding: 30px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             transition: all 0.3s;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .publication-card:hover {
@@ -528,22 +597,25 @@
         }
 
         .publication-card h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
+            font-size: 20px;
+            margin-bottom: 10px;
             color: #fff;
         }
 
         .publication-meta {
             color: #667eea;
             font-size: 14px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-weight: 600;
         }
 
         .publication-card p {
             color: #888;
             line-height: 1.8;
+            font-size: 14px;
         }
+
+        /* Certifications */
 
         .certifications-grid {
             display: grid;
@@ -555,7 +627,7 @@
 
         .cert-card {
             background: rgba(255, 255, 255, 0.03);
-            padding: 35px;
+            padding: 28px;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             text-align: center;
@@ -569,20 +641,22 @@
         }
 
         .cert-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 38px;
+            margin-bottom: 14px;
         }
 
         .cert-card h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
+            font-size: 16px;
+            margin-bottom: 8px;
             color: #fff;
         }
 
         .cert-card p {
             color: #888;
-            font-size: 14px;
+            font-size: 13px;
         }
+
+        /* Contact */
 
         .contact-grid {
             display: grid;
@@ -594,7 +668,7 @@
 
         .contact-card {
             background: rgba(255, 255, 255, 0.03);
-            padding: 50px 30px;
+            padding: 40px 26px;
             border-radius: 25px;
             border: 1px solid rgba(255, 255, 255, 0.05);
             text-align: center;
@@ -608,13 +682,19 @@
         }
 
         .contact-icon {
-            font-size: 56px;
-            margin-bottom: 20px;
+            font-size: 42px;
+            margin-bottom: 18px;
         }
 
         .contact-card h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 8px;
         }
 
         .contact-card a {
@@ -623,6 +703,7 @@
             font-weight: 600;
             transition: all 0.3s;
             word-break: break-word;
+            font-size: 14px;
         }
 
         .contact-card a:hover {
@@ -631,28 +712,44 @@
 
         footer {
             text-align: center;
-            padding: 60px 0;
+            padding: 50px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             color: #666;
+            font-size: 13px;
         }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        /* Responsive */
 
         @media (max-width: 1024px) {
             .hero-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 50px;
                 text-align: center;
             }
 
             .hero-text h1 {
-                font-size: 56px;
+                font-size: 48px;
             }
 
             .hero-text p {
-                margin: 0 auto 40px;
+                margin: 0 auto 35px;
             }
 
             .cta-buttons {
                 justify-content: center;
+            }
+
+            .hero-meta {
+                text-align: center;
             }
 
             .profile-wrapper {
@@ -682,23 +779,27 @@
             }
 
             nav ul {
-                gap: 15px;
-                font-size: 14px;
+                gap: 12px;
+                font-size: 13px;
             }
 
             .hero-text h1 {
-                font-size: 40px;
+                font-size: 36px;
             }
 
             .hero-text h2 {
-                font-size: 24px;
+                font-size: 22px;
             }
 
             .section-title h2 {
-                font-size: 40px;
+                font-size: 34px;
             }
 
             .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -711,12 +812,16 @@
             }
 
             .profile-wrapper {
-                width: 300px;
-                height: 300px;
+                width: 280px;
+                height: 280px;
             }
 
             .stats {
                 grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                padding-left: 40px;
             }
         }
     </style>
@@ -728,24 +833,36 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#publications">Research</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- HERO -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-text">
                     <h1>Full Stack Developer & Data Scientist</h1>
-                    <h2>Innovating with AI & Deep Learning</h2>
-                    <p>Passionate B.Tech graduate specializing in Data Science with proven expertise in Python, full-stack development, and machine learning. Published researcher with hands-on experience transforming complex problems into intelligent solutions.</p>
+                    <h2>Leveraging AI & Deep Learning for Real-World Impact</h2>
+                    <p>
+                        Motivated B.Tech student specializing in Computer Science & Data Science with strong expertise
+                        in Python and full-stack development. Passionate about applying deep learning and AI
+                        technologies to solve real-world problems, with hands-on experience building end-to-end
+                        applications and publishing research in machine learning and computer vision.
+                    </p>
+                    <div class="hero-meta">
+                        <span>📍 Hyderabad, India</span>
+                        <span>🎓 B.Tech (CSE – Data Science), 2021–2025</span>
+                    </div>
                     <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="mailto:marrianilkumar19@gmail.com" class="btn btn-outline">Hire / Connect</a>
                     </div>
                 </div>
                 <div class="profile-section">
@@ -761,80 +878,112 @@
             <div class="stats">
                 <div class="stat-box">
                     <h3>5+</h3>
-                    <p>Major Projects</p>
+                    <p>Major Academic & Personal Projects</p>
                 </div>
                 <div class="stat-box">
                     <h3>2</h3>
-                    <p>Publications</p>
+                    <p>Research Publications</p>
                 </div>
                 <div class="stat-box">
                     <h3>6</h3>
-                    <p>Certifications</p>
+                    <p>Technical Certifications & Workshops</p>
                 </div>
                 <div class="stat-box">
                     <h3>7.5</h3>
-                    <p>CGPA</p>
+                    <p>CGPA – B.Tech CSE (Data Science)</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
         <div class="container">
             <div class="section-title">
                 <h2>Technical Arsenal</h2>
-                <p>Technologies I master</p>
+                <p>Technologies and concepts I work with day-to-day</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">🐍</div>
-                    <h3>Python</h3>
-                    <p>Flask, NumPy, Pandas, Backend Development, Automation</p>
+                    <h3>Programming</h3>
+                    <p>Python, Core Java, Data Structures, OOP (Inheritance, Polymorphism, Encapsulation, Abstraction).</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🤖</div>
-                    <h3>AI/ML</h3>
-                    <p>YOLOv3, CNN, MobileNet, Random Forest, Few-Shot Learning</p>
+                    <h3>AI & Machine Learning</h3>
+                    <p>YOLOv3, CNN, MobileNet, Random Forest, Few-Shot Learning for computer vision and prediction tasks.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">👁️</div>
                     <h3>Computer Vision</h3>
-                    <p>OpenCV, Haar Cascades, Object Detection, Image Processing</p>
+                    <p>OpenCV, Haar Cascades, medical image analysis, object detection, real-time video processing.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">💾</div>
-                    <h3>Database</h3>
-                    <p>MySQL, SQL Queries, Database Optimization, DBMS</p>
+                    <h3>Databases</h3>
+                    <p>SQL, MySQL, DBMS fundamentals, database schema design, query optimization and data extraction.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🌐</div>
-                    <h3>Web Dev</h3>
-                    <p>Flask, RESTful APIs, Tkinter, Full-Stack Development</p>
+                    <h3>Web & Backend</h3>
+                    <p>Flask, RESTful APIs, authentication, Tkinter GUIs, full-stack workflows using Python & MySQL.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">📊</div>
                     <h3>Data Science</h3>
-                    <p>Pandas, NumPy, Matplotlib, Seaborn, Data Analysis</p>
+                    <p>Pandas, NumPy, Matplotlib, Seaborn for data wrangling, analysis, and meaningful visualizations.</p>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">☕</div>
-                    <h3>Core Java</h3>
-                    <p>OOP, Data Structures, Algorithms, Design Patterns</p>
+                    <div class="skill-icon">🧠</div>
+                    <h3>Core CS Concepts</h3>
+                    <p>Algorithms, problem solving, debugging, software development lifecycle, version control basics.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">💡</div>
                     <h3>Soft Skills</h3>
-                    <p>Leadership, Mentoring, Problem Solving, Adaptability</p>
+                    <p>Leadership, mentoring peers, problem solving, team collaboration, adaptability, consistency.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <p>Academic foundation in Computer Science & Data Science</p>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-degree">Bachelor of Engineering in Computer Science & Data Science</div>
+                    <div class="edu-inst">Sreyas Institute of Engineering and Technology, Hyderabad</div>
+                    <div class="edu-meta">2021 – 2025 · CGPA: 7.5 / 10</div>
+                    <div class="edu-extra">Coursework: Data Science, Machine Learning, Algorithms, DBMS, Computer Networks.</div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-degree">Board of Intermediate Education (MPC)</div>
+                    <div class="edu-inst">Alphores Junior College</div>
+                    <div class="edu-meta">2019 – 2021 · Percentage: 94.2%</div>
+                    <div class="edu-extra">Strong foundation in Mathematics and logical reasoning.</div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-degree">Secondary School (SSC)</div>
+                    <div class="edu-inst">Tetrahedron High School</div>
+                    <div class="edu-meta">2018 – 2019 · CGPA: 9.2 / 10</div>
+                    <div class="edu-extra">Consistently high academic performance with interest in technology from early years.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
         <div class="container">
             <div class="section-title">
                 <h2>Featured Projects</h2>
-                <p>Innovation through code</p>
+                <p>Bringing ideas to life with code, data, and AI</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
@@ -842,14 +991,21 @@
                         <h3>🧠 Ischaemic Stroke Prediction</h3>
                     </div>
                     <div class="project-body">
-                        <p>Deep learning framework combining CNNs with few-shot learning for limited medical imaging data. Achieved improved diagnostic accuracy through enhanced feature extraction and model interpretability for early stroke detection.</p>
+                        <p>
+                            Developed a deep learning framework that combines CNNs with few-shot learning to work
+                            effectively on limited medical imaging data. Improved diagnostic accuracy by enhancing
+                            feature extraction and model interpretability for early stroke detection.
+                        </p>
                         <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
                             <span class="tech-tag">CNN</span>
                             <span class="tech-tag">MobileNet</span>
                             <span class="tech-tag">Random Forest</span>
                             <span class="tech-tag">Few-Shot Learning</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
                         </div>
-                        <a href="https://github.com/anilkumar19092002" class="project-link">View Research →</a>
+                        <a href="https://github.com/anilkumar19092002" target="_blank" class="project-link">View Research Repository →</a>
                     </div>
                 </div>
 
@@ -858,30 +1014,40 @@
                         <h3>🌾 Smart Crop Protection System</h3>
                     </div>
                     <div class="project-body">
-                        <p>AI-powered scarecrow system using YOLOv3 for real-time farm animal detection. Integrated COCO database for accurate wildlife identification with automated farmer alerts to prevent crop damage.</p>
+                        <p>
+                            Built an AI-powered scarecrow system using YOLOv3 for real-time detection of animals in
+                            farms. Integrated the COCO dataset for accurate wildlife identification and triggered
+                            automated alerts to farmers to prevent crop damage and improve agricultural security.
+                        </p>
                         <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
                             <span class="tech-tag">YOLOv3</span>
                             <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Python</span>
                             <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">COCO Dataset</span>
                         </div>
-                        <a href="https://github.com/anilkumar19092002" class="project-link">View Project →</a>
+                        <a href="https://github.com/anilkumar19092002" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>🏦 Online Banking Management</h3>
+                        <h3>🏦 Online Banking Management System</h3>
                     </div>
                     <div class="project-body">
-                        <p>Full-stack banking application with secure account management functionality. Implemented RESTful APIs using Flask, GUI with Tkinter, and integrated MySQL with robust security measures.</p>
+                        <p>
+                            Designed a full-stack banking application with secure account management features.
+                            Implemented backend RESTful APIs using Flask, built a desktop GUI using Tkinter, and
+                            integrated a MySQL database with robust exception handling and security measures.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">REST APIs</span>
                         </div>
-                        <a href="https://github.com/marrinilkumar91/bank-project" class="project-link">View Project →</a>
+                        <a href="https://github.com/marrinilkumar91/bank-project" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
 
@@ -890,25 +1056,31 @@
                         <h3>🚗 Driver Drowsiness Detection</h3>
                     </div>
                     <div class="project-body">
-                        <p>Real-time drowsiness detection using webcam and computer vision techniques. Implemented alert system triggering audio warnings after 3 seconds of eye closure with visualization overlay.</p>
+                        <p>
+                            Developed a real-time driver drowsiness detection system using a webcam and computer
+                            vision techniques. Implemented an alert mechanism that triggers an audio warning after
+                            3 seconds of eye closure and visual overlays showing detection status and safety metrics.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">OpenCV</span>
                             <span class="tech-tag">Haar Cascades</span>
                             <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Real-Time Detection</span>
                         </div>
-                        <a href="https://github.com/marrinilkumar91/dirver-drowsyness-detection" class="project-link">View Project →</a>
+                        <a href="https://github.com/marrinilkumar91/dirver-drowsyness-detection" target="_blank" class="project-link">View Project →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience">
         <div class="container">
             <div class="section-title">
                 <h2>Professional Journey</h2>
-                <p>Building expertise through real-world experience</p>
+                <p>Growing through internships and real-world engineering exposure</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
@@ -916,16 +1088,154 @@
                     <div class="timeline-content">
                         <h3>Technical Trainee Engineer</h3>
                         <h4>Timon Global</h4>
-                        <p class="timeline-date">June 2025 - Present</p>
+                        <p class="timeline-date">June 2025 – Present</p>
                         <ul>
-                            <li>Gained hands-on experience in IT operations and software development lifecycle</li>
-                            <li>Extensively worked with Python for data processing, automation scripts, and backend development</li>
-                            <li>Utilized SQL for database queries, data extraction, and optimizing database performance</li>
-                            <li>Collaborated with senior engineers on troubleshooting, testing, and project implementation</li>
-                            <li>Enhanced technical problem-solving and teamwork skills through real-time project contributions</li>
+                            <li>Gaining hands-on experience across IT operations and the complete software development lifecycle.</li>
+                            <li>Working extensively with Python for data processing, automation scripts, and backend components.</li>
+                            <li>Using SQL and MySQL for querying, data extraction, and optimizing database performance.</li>
+                            <li>Collaborating with senior engineers on troubleshooting, testing, and implementing project features.</li>
+                            <li>Strengthening problem-solving, debugging, and teamwork skills through real-time project contributions.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern</h3>
+                        <h4>Workcohol</h4>
+                        <p class="timeline-date">March 2025 – June 2025</p>
+                        <ul>
+                            <li>Developed and maintained a blogging platform using Python and the Flask framework.</li>
+                            <li>Designed and implemented MySQL database schemas for efficient content storage and retrieval.</li>
+                            <li>Built RESTful APIs for content management and user authentication in Python.</li>
+                            <li>Wrote complex SQL queries for data aggregation, filtering, and optimized database operations.</li>
+                            <li>Implemented features to improve content management and reader engagement across diverse topics.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS / RESEARCH -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Research & Publications</h2>
+                <p>Contributing to the AI and computer vision community</p>
+            </div>
+
+            <div class="publication-card">
+                <h3>Enhanced Deep Learning Framework for Predicting and Interpreting Ischaemic Stroke Using Few-Shot Learning</h3>
+                <div class="publication-meta">
+                    16th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2025 · Paper ID: 7460
+                </div>
+                <p>
+                    Proposed a deep learning framework combining convolutional neural networks with few-shot learning
+                    to handle limited medical imaging data. Focused on improving prediction accuracy and interpretability
+                    for ischaemic stroke diagnosis, enabling more reliable decision support for clinicians.
+                </p>
+            </div>
+
+            <div class="publication-card">
+                <h3>Smart Crop Protection System Using Deep Learning</h3>
+                <div class="publication-meta">
+                    Journal of Science and Technology, Volume 9, Issue 11, October 2024
+                </div>
+                <p>
+                    Designed a smart crop protection system powered by deep learning to detect animals entering
+                    farmland. Used YOLOv3 and real-time computer vision pipelines to identify threats and trigger
+                    alerts, helping farmers protect crops and reduce losses.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+                <p>Continuous learning through MOOCs and workshops</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">☁️</div>
+                    <h3>Cloud Computing, IoT, and Blockchain</h3>
+                    <p>NPTEL certification covering fundamentals of cloud platforms, IoT architectures, and blockchain concepts.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🐍</div>
+                    <h3>Crash Course on Python</h3>
+                    <p>Coursera – Strengthened Python programming foundations, scripting, and problem-solving skills.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>Python Full Stack with Data Analysis</h3>
+                    <p>Vision Networks – End-to-end Python full-stack development with integrated data analysis practices.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🌐</div>
+                    <h3>Web Development 101</h3>
+                    <p>Pupilfirst – Introduction to modern web development, frontend fundamentals, and best practices.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🧪</div>
+                    <h3>Python Workshop</h3>
+                    <p>Codewise – Hands-on workshop focusing on Python basics, coding patterns, and mini-projects.</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Academic & Tech Events</h3>
+                    <p>Participation in multiple college-level tech events and seminars on AI, ML, and software development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Let’s Connect</h2>
+                <p>Open to internships, trainee roles, and full-time opportunities in software & data</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📩</div>
+                    <h3>Email</h3>
+                    <p>Preferable way to reach me for roles and collaborations.</p>
+                    <a href="mailto:marrianilkumar19@gmail.com">marrianilkumar19@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>Available for quick discussions and interview scheduling.</p>
+                    <a href="tel:+917842166900">+91-78421 66900</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Profiles & Portfolio</h3>
+                    <p>Explore my work, code, and professional journey.</p>
+                    <a href="https://linkedin.com/in/marri-anil-kumar-542419253" target="_blank">LinkedIn Profile</a><br>
+                    <a href="https://github.com/anilkumar19092002" target="_blank">GitHub – anilkumar19092002</a><br>
+                    <a href="https://anilkumar19092002.github.io/portfolio" target="_blank">Current Portfolio URL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © <span id="year"></span> Anil Kumar Marri · Built with ❤️ using HTML, CSS & a bit of creativity.
+        <br>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
