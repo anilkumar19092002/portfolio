@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Cutive+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Cutive+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous">
     <title>Anil Kumar Marri | AI & Machine Learning Engineer</title>
     <style>
         /* FUTURISTIC NEON SLATE & CYBER COLOR SYSTEM */
@@ -16,8 +19,10 @@
             --text-muted: #475569;
             --card-bg: rgba(241, 245, 249, 0.85);
             --card-border: rgba(99, 102, 241, 0.25);
-            --accent-primary: #4F46E5; /* Indigo */
-            --accent-secondary: #0891B2; /* Cyan */
+            --accent-primary: #4F46E5;
+            /* Indigo */
+            --accent-secondary: #0891B2;
+            /* Cyan */
             --accent-glow: rgba(99, 102, 241, 0.1);
             --shadow-color: rgba(99, 102, 241, 0.05);
             --header-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.9) 100%);
@@ -27,13 +32,18 @@
         }
 
         html.dark {
-            --bg-color: #030712; /* Obsidian Dark */
+            --bg-color: #030712;
+            /* Obsidian Dark */
             --text-color: #F3F4F6;
             --text-muted: #9CA3AF;
-            --card-bg: rgba(17, 24, 39, 0.7); /* Translucent Card */
-            --card-border: rgba(139, 92, 246, 0.3); /* Neon Violet Border */
-            --accent-primary: #A78BFA; /* Cyber Violet */
-            --accent-secondary: #22D3EE; /* Cyber Cyan */
+            --card-bg: rgba(17, 24, 39, 0.7);
+            /* Translucent Card */
+            --card-border: rgba(139, 92, 246, 0.3);
+            /* Neon Violet Border */
+            --accent-primary: #A78BFA;
+            /* Cyber Violet */
+            --accent-secondary: #22D3EE;
+            /* Cyber Cyan */
             --accent-glow: rgba(139, 92, 246, 0.15);
             --shadow-color: rgba(0, 0, 0, 0.5);
             --header-gradient: linear-gradient(135deg, rgba(3, 7, 18, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
@@ -43,40 +53,69 @@
         }
 
         /* GLOBAL SETUP */
-        html { line-height: 1.5; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; font-size: 62.5%; }
-        *, *:before, *:after { box-sizing: inherit; color: inherit; }
-        body { 
-            margin: 0; 
-            background-color: var(--bg-color); 
+        html {
+            line-height: 1.5;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+            color: inherit;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-color);
             color: var(--text-color);
             font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth; 
-            overflow-x: hidden; 
+            scroll-behavior: smooth;
+            overflow-x: hidden;
             width: 100vw;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        
-        a { text-decoration: none; transition: 0.3s; }
-        button, input, textarea { font-family: 'Space Grotesk', sans-serif; -webkit-tap-highlight-color: transparent; }
-        button { cursor: pointer; transition: 0.3s; }
-        
-        h1, h2, h3, h4 { 
-            font-family: 'Space Grotesk', sans-serif; 
+
+        a {
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        button,
+        input,
+        textarea {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
             margin: 0;
         }
-        
-        h2 { 
-            font-size: 3rem; 
-            text-align: center; 
-            margin-top: 8rem; 
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 8rem;
             letter-spacing: 0.1rem;
             position: relative;
             display: inline-block;
             left: 50%;
             transform: translateX(-50%);
         }
-        
+
         h2::after {
             content: '';
             display: block;
@@ -87,8 +126,24 @@
             border-radius: 2px;
         }
 
-        .wrapper { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden; }
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
 
         /* BACK TO TOP BUTTON */
         .back-to-top {
@@ -106,6 +161,7 @@
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 15px var(--shadow-color);
         }
+
         .back-to-top:hover {
             border-color: var(--accent-primary);
             transform: translateY(-3px);
@@ -206,9 +262,11 @@
         .hamburger-menu.is-active span:nth-child(1) {
             transform: translateY(9px) rotate(45deg);
         }
+
         .hamburger-menu.is-active span:nth-child(2) {
             opacity: 0;
         }
+
         .hamburger-menu.is-active span:nth-child(3) {
             transform: translateY(-9px) rotate(-45deg);
         }
@@ -217,6 +275,7 @@
             .hamburger-menu {
                 display: flex;
             }
+
             .nav-links {
                 position: fixed;
                 top: 0;
@@ -232,6 +291,7 @@
                 box-shadow: -10px 0 30px var(--shadow-color);
                 border-left: 1px solid var(--card-border);
             }
+
             .nav-links.show {
                 right: 0;
             }
@@ -277,6 +337,7 @@
             transition: 0.3s;
             margin-top: 1rem;
         }
+
         .call-to-action-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px var(--glow-color);
@@ -342,6 +403,7 @@
                 grid-template-columns: 1fr;
                 gap: 5rem;
             }
+
             .my-image img {
                 height: 30rem;
                 width: 30rem;
@@ -481,21 +543,33 @@
             box-shadow: 0 5px 15px var(--shadow-color);
             transition: 0.3s;
         }
+
         .carousel-btn:hover {
             border-color: var(--accent-primary);
             transform: scale(1.1);
         }
 
-        .carousel-btn.prev-btn { left: 100px; }
-        .carousel-btn.next-btn { right: 100px; }
+        .carousel-btn.prev-btn {
+            left: 100px;
+        }
+
+        .carousel-btn.next-btn {
+            right: 100px;
+        }
 
         @media (max-width: 900px) {
             .edu-card {
                 width: 85%;
                 padding: 3rem;
             }
-            .carousel-btn.prev-btn { left: 10px; }
-            .carousel-btn.next-btn { right: 10px; }
+
+            .carousel-btn.prev-btn {
+                left: 10px;
+            }
+
+            .carousel-btn.next-btn {
+                right: 10px;
+            }
         }
 
         /* PROJECTS GRID REDESIGNED - NO GAPS, FLUID, CLEAN */
@@ -611,12 +685,16 @@
             box-shadow: inset 0 0 0 0 var(--accent-hover);
             transition: 0.3s;
         }
+
         .project-link-btn:hover {
             background-color: var(--accent-primary);
             color: #FFFFFF;
             transform: translateY(-2px);
         }
-        .project-link-btn i { color: inherit; }
+
+        .project-link-btn i {
+            color: inherit;
+        }
 
         .demo-expand-btn {
             font-family: 'Space Grotesk', sans-serif;
@@ -629,6 +707,7 @@
             gap: 0.8rem;
             color: var(--accent-secondary);
         }
+
         .demo-expand-btn:hover {
             color: var(--accent-primary);
         }
@@ -673,6 +752,7 @@
             background-color: var(--card-bg);
             box-shadow: 0 4px 15px var(--shadow-color);
         }
+
         .view-all-projects:hover {
             border-color: var(--accent-primary);
             background-color: var(--accent-primary);
@@ -706,11 +786,25 @@
             transform: rotateX(-80deg) rotateY(5deg) rotateZ(10deg) translateY(-20px) scale(1.1);
         }
 
-        .linkedin:hover .side { background-color: #0a66c2; }
-        .github:hover .side { background-color: #171515; }
-        .instagram:hover .side { background-color: #c32aa3; }
-        .discord:hover .side { background-color: #5865f2; }
-        .twitter:hover .side { background-color: #1da1f2; }
+        .linkedin:hover .side {
+            background-color: #0a66c2;
+        }
+
+        .github:hover .side {
+            background-color: #171515;
+        }
+
+        .instagram:hover .side {
+            background-color: #c32aa3;
+        }
+
+        .discord:hover .side {
+            background-color: #5865f2;
+        }
+
+        .twitter:hover .side {
+            background-color: #1da1f2;
+        }
 
         .side {
             position: absolute;
@@ -723,7 +817,11 @@
             background-color: var(--card-bg);
         }
 
-        .side i { font-size: 2.5rem; margin-right: 1.5rem; color: inherit; }
+        .side i {
+            font-size: 2.5rem;
+            margin-right: 1.5rem;
+            color: inherit;
+        }
 
         .side:nth-child(1) {
             opacity: 1;
@@ -741,10 +839,30 @@
             transform: rotateX(-90deg) translateZ(-10px);
             box-shadow: -5px -5px 25px -5px var(--accent-primary);
         }
-        .side:nth-child(3) { height: 40px; width: 60px; transform: rotateY(-90deg) translateZ(30px); }
-        .side:nth-child(4) { height: 40px; width: 60px; transform: rotateY(90deg) translateZ(170px); }
-        .side:nth-child(5) { height: 40px; width: 200px; transform: rotateX(0deg) translateZ(30px); }
-        .side:nth-child(6) { height: 40px; width: 200px; transform: rotateX(180deg) translateZ(30px); }
+
+        .side:nth-child(3) {
+            height: 40px;
+            width: 60px;
+            transform: rotateY(-90deg) translateZ(30px);
+        }
+
+        .side:nth-child(4) {
+            height: 40px;
+            width: 60px;
+            transform: rotateY(90deg) translateZ(170px);
+        }
+
+        .side:nth-child(5) {
+            height: 40px;
+            width: 200px;
+            transform: rotateX(0deg) translateZ(30px);
+        }
+
+        .side:nth-child(6) {
+            height: 40px;
+            width: 200px;
+            transform: rotateX(180deg) translateZ(30px);
+        }
 
         /* CONTACT FORM */
         .contact-section-wrap {
@@ -772,7 +890,8 @@
             width: 100%;
         }
 
-        input, textarea {
+        input,
+        textarea {
             outline: none;
             border: 1px solid var(--card-border);
             font-size: 1.6rem;
@@ -782,12 +901,14 @@
             transition: 0.3s;
         }
 
-        input:focus, textarea:focus {
+        input:focus,
+        textarea:focus {
             border-color: var(--accent-primary);
             box-shadow: 0 0 15px var(--accent-glow);
         }
 
-        input::placeholder, textarea::placeholder {
+        input::placeholder,
+        textarea::placeholder {
             color: var(--text-muted);
             opacity: 0.7;
         }
@@ -810,6 +931,7 @@
             padding: 1.4rem 6rem;
             box-shadow: 0 4px 15px var(--accent-glow);
         }
+
         .submit-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px var(--glow-color);
@@ -859,6 +981,7 @@
             border-radius: 2rem;
             font-weight: 600;
         }
+
         .signature-link:hover {
             box-shadow: 0 4px 15px var(--accent-glow);
         }
@@ -885,6 +1008,7 @@
                 flex-direction: column;
                 text-align: center;
             }
+
             .contact-inputs-row {
                 flex-direction: column;
                 gap: 3rem;
@@ -892,6 +1016,7 @@
         }
     </style>
 </head>
+
 <body>
     <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
@@ -909,7 +1034,8 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#social">Social</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><button class="theme-button" aria-label="Toggle Theme"><i class="fa-solid fa-sun theme-icon"></i></button></li>
+            <li><button class="theme-button" aria-label="Toggle Theme"><i
+                        class="fa-solid fa-sun theme-icon"></i></button></li>
         </ul>
     </nav>
 
@@ -935,75 +1061,93 @@
                 </div>
                 <div class="about-text">
                     <p>
-                        I'm Anil Kumar Marri, an AI & Machine Learning Engineer. I focus on developing intelligent models, computer vision systems, and robust deep learning pipelines.
-                        <br/><br/>
-                        With extensive experience in python architectures, CNNs, YOLO, and API integrations, I strive to design applications that translate neural network models into real-world solutions.
-                        <br/><br/>
-                        A quick learner and research-focused engineer, I enjoy taking complex algorithmic problems and engineering them into clean, high-performing code. Let's collaborate and build something impactful!
+                        I'm Anil Kumar Marri, an AI & Machine Learning Engineer. I focus on developing intelligent
+                        models, computer vision systems, and robust deep learning pipelines.
+                        <br /><br />
+                        With extensive experience in python architectures, CNNs, YOLO, and API integrations, I strive to
+                        design applications that translate neural network models into real-world solutions.
+                        <br /><br />
+                        A quick learner and research-focused engineer, I enjoy taking complex algorithmic problems and
+                        engineering them into clean, high-performing code. Let's collaborate and build something
+                        impactful!
                     </p>
                 </div>
             </div>
-            
+
             <!-- TECH STACK SLIDER -->
             <div class="slider-section">
                 <h3>Technologies & Tools I Use</h3>
                 <div class="slider-container">
                     <div class="tech-stack-slider">
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python" class="tech-icon">
                             <p>Python</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java" class="tech-icon">
                             <p>Java</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="Tensorflow" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                alt="Tensorflow" class="tech-icon">
                             <p>Tensorflow</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                                alt="OpenCV" class="tech-icon">
                             <p>OpenCV</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                                alt="Flask" class="tech-icon">
                             <p>Flask</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL" class="tech-icon">
                             <p>MySQL</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                                class="tech-icon">
                             <p>Git</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="Github" class="tech-icon">
                             <p>GitHub</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                                alt="Jupyter" class="tech-icon">
                             <p>Jupyter</p>
                         </div>
                         <!-- Duplicate set for infinite animation loop -->
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python" class="tech-icon">
                             <p>Python</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java" class="tech-icon">
                             <p>Java</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="Tensorflow" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                alt="Tensorflow" class="tech-icon">
                             <p>Tensorflow</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                                alt="OpenCV" class="tech-icon">
                             <p>OpenCV</p>
                         </div>
                         <div class="tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="tech-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                                alt="Flask" class="tech-icon">
                             <p>Flask</p>
                         </div>
                     </div>
@@ -1015,9 +1159,11 @@
         <section class="wrapper" id="education">
             <h2>Education</h2>
             <div class="education-carousel">
-                <button class="carousel-btn prev-btn" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="carousel-btn next-btn" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
-                
+                <button class="carousel-btn prev-btn" aria-label="Previous Slide"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn" aria-label="Next Slide"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+
                 <div class="edu-card show-card">
                     <h3>B.Tech in Computer Science & Data Science</h3>
                     <h4>Sreyas Institute of Engineering and Technology</h4>
@@ -1045,7 +1191,7 @@
         <section class="wrapper" id="projects">
             <h2>Top Projects</h2>
             <div class="project-list-grid">
-                
+
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div>
@@ -1053,18 +1199,24 @@
                             <h3>Ischaemic Stroke Prediction DL</h3>
                             <span class="project-badge">Deep Learning</span>
                         </div>
-                        <p class="project-desc">Developed a CNN deep learning framework leveraging few-shot learning algorithms to optimize stroke prediction diagnostic features from minor image datasets.</p>
+                        <p class="project-desc">Developed a CNN deep learning framework leveraging few-shot learning
+                            algorithms to optimize stroke prediction diagnostic features from minor image datasets.</p>
                     </div>
                     <div>
                         <div class="project-card-tech">
                             <h4>Tech Stack</h4>
                             <div class="tech-badges-row">
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</span>
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="Tensorflow"> Tensorflow</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        alt="Python"> Python</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                        alt="Tensorflow"> Tensorflow</span>
                             </div>
                         </div>
                         <div class="project-card-footer">
-                            <a href="https://github.com/anilkumar19092002" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                            <a href="https://github.com/anilkumar19092002" target="_blank" class="project-link-btn"><i
+                                    class="fa-brands fa-github"></i> GitHub Repo</a>
                         </div>
                     </div>
                 </div>
@@ -1076,19 +1228,26 @@
                             <h3>Smart Crop YOLOv3 System</h3>
                             <span class="project-badge">Computer Vision</span>
                         </div>
-                        <p class="project-desc">Designed and built a crop protection animal-deterrent system utilizing YOLOv3 models and OpenCV visual tracking to automate scarecrow alerts on crop threats.</p>
+                        <p class="project-desc">Designed and built a crop protection animal-deterrent system utilizing
+                            YOLOv3 models and OpenCV visual tracking to automate scarecrow alerts on crop threats.</p>
                     </div>
                     <div>
                         <div class="project-card-tech">
                             <h4>Tech Stack</h4>
                             <div class="tech-badges-row">
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</span>
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"> OpenCV</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        alt="Python"> Python</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                                        alt="OpenCV"> OpenCV</span>
                             </div>
                         </div>
                         <div class="project-card-footer">
-                            <a href="https://github.com/anilkumar19092002" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-                            <button class="demo-expand-btn" onclick="toggleProjectDemo('yolo-crop-card')"><i class="fa-solid fa-play"></i> Show Demo</button>
+                            <a href="https://github.com/anilkumar19092002" target="_blank" class="project-link-btn"><i
+                                    class="fa-brands fa-github"></i> GitHub Repo</a>
+                            <button class="demo-expand-btn" onclick="toggleProjectDemo('yolo-crop-card')"><i
+                                    class="fa-solid fa-play"></i> Show Demo</button>
                         </div>
                     </div>
                     <div class="demo-drawer">
@@ -1103,25 +1262,34 @@
                             <h3>Banking Flask Management</h3>
                             <span class="project-badge">Full-Stack SQL</span>
                         </div>
-                        <p class="project-desc">Programmed a secure database banking system containing authentication schemas, transaction logic, MySQL data backends, and Tkinter control portals.</p>
+                        <p class="project-desc">Programmed a secure database banking system containing authentication
+                            schemas, transaction logic, MySQL data backends, and Tkinter control portals.</p>
                     </div>
                     <div>
                         <div class="project-card-tech">
                             <h4>Tech Stack</h4>
                             <div class="tech-badges-row">
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</span>
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"> Flask</span>
-                                <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"> MySQL</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        alt="Python"> Python</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                                        alt="Flask"> Flask</span>
+                                <span class="tech-tag"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                        alt="MySQL"> MySQL</span>
                             </div>
                         </div>
                         <div class="project-card-footer">
-                            <a href="https://github.com/marrinilkumar91/bank-project" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                            <a href="https://github.com/marrinilkumar91/bank-project" target="_blank"
+                                class="project-link-btn"><i class="fa-brands fa-github"></i> GitHub Repo</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <a href="https://github.com/anilkumar19092002?tab=repositories" target="_blank" class="view-all-projects">View All Repositories</a>
+            <a href="https://github.com/anilkumar19092002?tab=repositories" target="_blank"
+                class="view-all-projects">View All Repositories</a>
         </section>
 
         <!-- SOCIAL PRESENCE -->
@@ -1129,20 +1297,40 @@
             <h2>Social Presence</h2>
             <div class="social-container">
                 <div class="social-button linkedin">
-                    <a href="https://linkedin.com/in/marri-anil-kumar-542419253" target="_blank" class="side"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                    <div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div>
+                    <a href="https://linkedin.com/in/marri-anil-kumar-542419253" target="_blank" class="side"><i
+                            class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
                 </div>
                 <div class="social-button github">
-                    <a href="https://github.com/anilkumar19092002" target="_blank" class="side"><i class="fa-brands fa-github"></i>GitHub</a>
-                    <div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div>
+                    <a href="https://github.com/anilkumar19092002" target="_blank" class="side"><i
+                            class="fa-brands fa-github"></i>GitHub</a>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
                 </div>
                 <div class="social-button instagram">
-                    <a href="https://instagram.com/" target="_blank" class="side"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                    <div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div>
+                    <a href="https://instagram.com/" target="_blank" class="side"><i
+                            class="fa-brands fa-instagram"></i>Instagram</a>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
                 </div>
                 <div class="social-button discord">
-                    <a href="https://discord.com/" target="_blank" class="side"><i class="fa-brands fa-discord"></i>Discord</a>
-                    <div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div>
+                    <a href="https://discord.com/" target="_blank" class="side"><i
+                            class="fa-brands fa-discord"></i>Discord</a>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
+                    <div class="side"></div>
                 </div>
             </div>
         </section>
@@ -1155,13 +1343,13 @@
                     <div class="contact-inputs-row">
                         <label for="name" class="sr-only">Full name</label>
                         <input type="text" name="name" id="name" placeholder="Full Name" required>
-                        
+
                         <label for="email" class="sr-only">Email address</label>
-                        <input type="email" name="email" id="email" placeholder="Email address" required/>
+                        <input type="email" name="email" id="email" placeholder="Email address" required />
                     </div>
                     <label for="message" class="sr-only">Message</label>
                     <textarea name="message" id="message" placeholder="What can I do for you?" required></textarea>
-                    
+
                     <button id="my-form-button" type="submit" class="submit-btn">Send Message</button>
                     <p id="my-form-status"></p>
                 </form>
@@ -1176,11 +1364,14 @@
                 <p>&lt;/&gt; ANIL KUMAR MARRI</p>
             </div>
             <div class="signature-text">
-                <h3>Made with ♥ by <a href="https://github.com/anilkumar19092002" target="_blank" class="signature-link">Anil Kumar</a></h3>
+                <h3>Made with ♥ by <a href="https://github.com/anilkumar19092002" target="_blank"
+                        class="signature-link">Anil Kumar</a></h3>
             </div>
             <div class="footer-social-links">
-                <a href="https://github.com/anilkumar19092002" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/marri-anil-kumar-542419253" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/anilkumar19092002" target="_blank" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/marri-anil-kumar-542419253" target="_blank" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
@@ -1371,12 +1562,12 @@
             var form = document.getElementById("my-form");
             if (!form) return;
 
-            form.addEventListener("submit", async function(event) {
+            form.addEventListener("submit", async function (event) {
                 event.preventDefault();
                 var status = document.getElementById("my-form-status");
                 var data = new FormData(event.target);
                 status.innerHTML = "Sending...";
-                
+
                 fetch(event.target.action, {
                     method: form.method,
                     body: data,
@@ -1407,9 +1598,9 @@
             const card = document.getElementById(cardId);
             const iframe = card.querySelector('iframe');
             const btn = card.querySelector('.demo-expand-btn');
-            
+
             card.classList.toggle('expanded');
-            
+
             if (card.classList.contains('expanded')) {
                 if (!iframe.src && iframe.getAttribute('data-src')) {
                     iframe.src = iframe.getAttribute('data-src');
@@ -1482,4 +1673,5 @@
         window.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
+
 </html>
